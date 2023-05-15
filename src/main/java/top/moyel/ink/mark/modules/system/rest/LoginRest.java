@@ -17,12 +17,12 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@RequestMapping
 @RequiredArgsConstructor
-@RequestMapping("/login")
 public class LoginRest {
     private final ISysUserService sysUserService;
 
-    @PostMapping
+    @PostMapping("/login")
     public Boolean login(@Valid @RequestBody LoginFormVO loginFormVO) {
         List<SysUser> sysUserList = sysUserService.list(loginFormVO.createWrapper());
 
