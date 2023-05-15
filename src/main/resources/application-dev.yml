@@ -1,0 +1,11 @@
+mybatis-flex:
+  datasource:
+    master:
+      url: jdbc:mariadb://127.0.0.1/ink_mark
+      username: root
+      password: root
+sa-token:
+  is-print: false
+  token-style: tik
+  jwt-secret-key: siojajdsiaoadsjoifhasioufhusoqweohuihufnzxjnmdjis
+  token-name: ink_mark_token
