@@ -9,3 +9,6 @@ sa-token:
   token-style: tik
   jwt-secret-key: siojajdsiaoadsjoifhasioufhusoqweohuihufnzxjnmdjis
   token-name: ink_mark_token
+spring:
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
