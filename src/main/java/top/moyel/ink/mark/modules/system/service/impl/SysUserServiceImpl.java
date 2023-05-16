@@ -7,5 +7,5 @@ import top.moyel.ink.mark.modules.system.mapper.SysUserMapper;
 import top.moyel.ink.mark.modules.system.service.ISysUserService;
 
 @Service
-public class ISysUserServiceImpl extends BaseServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
+public class SysUserServiceImpl extends BaseServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 }
