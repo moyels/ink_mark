@@ -14,12 +14,21 @@ import top.moyel.ink.mark.modules.system.vo.SysPermVO;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author moyel
+ * @folder 系统管理/权限管理
+ */
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/sys/perm")
 public class SysPermRest {
     private final ISysPermService sysPermService;
 
+    /**
+     * 权限树
+     *
+     * @return 权限树列表
+     */
     @GetMapping("/tree/all")
     public List<Tree<Long>> getPermTree() {
         List<SysPerm> sysPermList = sysPermService.list();
@@ -34,16 +43,34 @@ public class SysPermRest {
         return TreeUtil.build(sysPermTreeNodeList, null);
     }
 
+    /**
+     * 新增权限信息
+     *
+     * @param sysPermVO 权限信息
+     * @return 是否成功
+     */
     @PostMapping
     public Boolean saveSysPerm(@RequestBody SysPermVO sysPermVO) {
         return sysPermService.save(SysPermMapStruct.INSTANCE.toDO(sysPermVO));
     }
 
+    /**
+     * 修改权限信息
+     *
+     * @param sysPermVO 权限信息
+     * @return 是否成功
+     */
     @PutMapping
     public Boolean updateSysPerm(@RequestBody SysPermVO sysPermVO) {
         return sysPermService.update(SysPermMapStruct.INSTANCE.toDO(sysPermVO));
     }
 
+    /**
+     * 移除权限
+     *
+     * @param ids 权限id列表
+     * @return 是否成功
+     */
     @DeleteMapping
     public Boolean removeSysPerm(List<Long> ids) {
         return sysPermService.removeBatch(ids);
