@@ -11,9 +11,7 @@ import top.moyel.ink.mark.modules.system.service.ISysRoleService;
 import top.moyel.ink.mark.modules.system.validate.SysRoleSaveValidate;
 import top.moyel.ink.mark.modules.system.validate.SysRoleUpdateValidate;
 import top.moyel.ink.mark.modules.system.vo.SysRoleFormVO;
-import top.moyel.ink.mark.modules.system.vo.SysRoleSaveFormVO;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.groups.Default;
 import java.util.List;

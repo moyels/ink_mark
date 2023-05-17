@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import top.moyel.ink.mark.modules.system.entity.SysUser;
-import top.moyel.ink.mark.modules.system.mapper.SysUserMapper;
 import top.moyel.ink.mark.modules.system.service.ISysUserService;
 
 import java.util.List;

@@ -1,7 +1,6 @@
 package top.moyel.ink.mark.modules.system.rest;
 
 import cn.dev33.satoken.secure.SaSecureUtil;
-import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 import com.mybatisflex.core.paginate.Page;

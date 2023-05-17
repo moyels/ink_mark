@@ -1,6 +1,5 @@
 package top.moyel.ink.mark.anno;
 
-import com.mybatisflex.core.query.QueryColumn;
 import com.mybatisflex.core.query.QueryCondition;
 
 import java.lang.annotation.ElementType;
