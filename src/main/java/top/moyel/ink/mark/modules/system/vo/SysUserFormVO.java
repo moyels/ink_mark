@@ -5,6 +5,9 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotEmpty;
 
+/**
+ * @author moyel
+ */
 @Data
 public class SysUserFormVO {
     @NotEmpty

@@ -7,6 +7,9 @@ import top.moyel.ink.mark.base.entity.BaseQueryVO;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * @author moyel
+ */
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class LoginFormVO extends BaseQueryVO {

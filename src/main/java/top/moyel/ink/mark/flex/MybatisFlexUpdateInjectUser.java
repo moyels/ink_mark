@@ -4,6 +4,9 @@ import cn.dev33.satoken.stp.StpUtil;
 import com.mybatisflex.annotation.AbstractUpdateListener;
 import top.moyel.ink.mark.base.entity.BaseEntity;
 
+/**
+ * @author moyel
+ */
 public class MybatisFlexUpdateInjectUser extends AbstractUpdateListener<BaseEntity> {
     @Override
     public Class<BaseEntity> supportType() {

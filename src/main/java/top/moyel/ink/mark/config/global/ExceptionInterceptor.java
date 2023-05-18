@@ -4,6 +4,9 @@ import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * @author moyel
+ */
 @RestControllerAdvice
 public class ExceptionInterceptor {
     private static final String PARAMETER_ERROR = "参数存在异常！";

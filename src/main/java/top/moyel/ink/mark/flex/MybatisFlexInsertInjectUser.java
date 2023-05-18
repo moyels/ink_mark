@@ -4,6 +4,9 @@ import cn.dev33.satoken.stp.StpUtil;
 import com.mybatisflex.annotation.AbstractInsertListener;
 import top.moyel.ink.mark.base.entity.BaseEntity;
 
+/**
+ * @author moyel
+ */
 public class MybatisFlexInsertInjectUser extends AbstractInsertListener<BaseEntity> {
     @Override
     public Class<BaseEntity> supportType() {

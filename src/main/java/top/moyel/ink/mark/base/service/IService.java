@@ -57,7 +57,7 @@ public interface IService<E> {
      * @param ids 主键列表
      * @return result
      */
-    default boolean removeBatch(Collection<Serializable> ids) {
+    default boolean removeBatch(Collection<? extends Serializable> ids) {
         return SqlHelper.retBoolean(getBaseMapper().deleteBatchByIds(ids));
     }
 
@@ -68,7 +68,7 @@ public interface IService<E> {
      * @param size 片段长度
      * @return result
      */
-    default boolean removeBatch(List<Serializable> ids, int size) {
+    default boolean removeBatch(List<? extends Serializable> ids, int size) {
         return SqlHelper.retBoolean(getBaseMapper().deleteBatchByIds(ids, size));
     }
     // endregion

@@ -7,6 +7,9 @@ import top.moyel.ink.mark.anno.QueryParam;
 
 import java.lang.reflect.Field;
 
+/**
+ * @author moyel
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

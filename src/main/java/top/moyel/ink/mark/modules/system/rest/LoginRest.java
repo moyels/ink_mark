@@ -16,12 +16,22 @@ import top.moyel.ink.mark.modules.system.vo.LoginFormVO;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * @author moyel
+ */
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
 public class LoginRest {
     private final ISysUserService sysUserService;
 
+    /**
+     * 登录接口
+     *
+     * @param loginFormVO 登录表单
+     * @return 登录是否成功
+     * @folder 登录
+     */
     @PostMapping("/login")
     public Boolean login(@Valid @RequestBody LoginFormVO loginFormVO) {
         List<SysUser> sysUserList = sysUserService.list(loginFormVO.createWrapper());
