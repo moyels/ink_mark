@@ -6,6 +6,9 @@ import top.moyel.ink.mark.modules.system.entity.SysPerm;
 import top.moyel.ink.mark.modules.system.mapper.SysPermMapper;
 import top.moyel.ink.mark.modules.system.service.ISysPermService;
 
+/**
+ * @author moyel
+ */
 @Service
 public class SysPermServiceImpl extends BaseServiceImpl<SysPermMapper, SysPerm> implements ISysPermService {
 }

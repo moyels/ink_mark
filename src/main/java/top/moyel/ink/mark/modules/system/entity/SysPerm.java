@@ -10,6 +10,9 @@ import top.moyel.ink.mark.base.entity.BaseEntity;
 import top.moyel.ink.mark.flex.MybatisFlexInsertInjectUser;
 import top.moyel.ink.mark.flex.MybatisFlexUpdateInjectUser;
 
+/**
+ * @author moyel
+ */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Table(value = "sys_perm", onInsert = MybatisFlexInsertInjectUser.class, onUpdate = MybatisFlexUpdateInjectUser.class)

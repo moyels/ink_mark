@@ -15,6 +15,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * @author moyel
+ */
 public abstract class BaseQueryVO {
     /**
      * 创建查询条件

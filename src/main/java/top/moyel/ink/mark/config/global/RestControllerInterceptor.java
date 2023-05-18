@@ -1,5 +1,6 @@
 package top.moyel.ink.mark.config.global;
 
+import lombok.NonNull;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -11,10 +12,13 @@ import top.moyel.ink.mark.anno.DisableHttpResult;
 
 import java.util.Objects;
 
+/**
+ * @author moyel
+ */
 @RestControllerAdvice
 public class RestControllerInterceptor implements ResponseBodyAdvice<Object> {
     @Override
-    public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
+    public boolean supports(MethodParameter returnType, @NonNull Class<? extends HttpMessageConverter<?>> converterType) {
         if (Objects.isNull(returnType.getMethod()) || void.class.equals(returnType.getMethod().getReturnType()) || HttpResult.class.equals(returnType.getMethod().getReturnType())) {
             return false;
         }
@@ -23,7 +27,7 @@ public class RestControllerInterceptor implements ResponseBodyAdvice<Object> {
     }
 
     @Override
-    public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
+    public Object beforeBodyWrite(Object body, @NonNull MethodParameter returnType, @NonNull MediaType selectedContentType, @NonNull Class<? extends HttpMessageConverter<?>> selectedConverterType, @NonNull ServerHttpRequest request, @NonNull ServerHttpResponse response) {
         if (Objects.isNull(body)) {
             return HttpResult.fail();
         }

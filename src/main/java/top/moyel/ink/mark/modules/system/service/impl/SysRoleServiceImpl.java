@@ -6,6 +6,9 @@ import top.moyel.ink.mark.modules.system.entity.SysRole;
 import top.moyel.ink.mark.modules.system.mapper.SysRoleMapper;
 import top.moyel.ink.mark.modules.system.service.ISysRoleService;
 
+/**
+ * @author moyel
+ */
 @Service
 public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleMapper, SysRole> implements ISysRoleService {
 }

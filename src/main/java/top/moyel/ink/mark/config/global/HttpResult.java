@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import top.moyel.ink.mark.consts.HttpResultConsts;
 
+/**
+ * @author moyel
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

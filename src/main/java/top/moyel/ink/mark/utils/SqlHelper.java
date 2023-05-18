@@ -14,6 +14,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * @author moyel
+ */
 public class SqlHelper {
     public static boolean retBoolean(int retCode) {
         return retCode > 0;

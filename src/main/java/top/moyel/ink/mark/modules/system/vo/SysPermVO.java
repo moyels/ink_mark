@@ -2,6 +2,9 @@ package top.moyel.ink.mark.modules.system.vo;
 
 import lombok.Data;
 
+/**
+ * @author moyel
+ */
 @Data
 public class SysPermVO {
     private Long id;

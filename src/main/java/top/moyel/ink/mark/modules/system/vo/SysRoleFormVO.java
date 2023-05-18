@@ -8,6 +8,9 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 
+/**
+ * @author moyel
+ */
 @Data
 public class SysRoleFormVO {
     @Null(groups = SysRoleSaveValidate.class)

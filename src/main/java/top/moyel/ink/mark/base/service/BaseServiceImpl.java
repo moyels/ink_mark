@@ -4,6 +4,9 @@ import com.mybatisflex.core.BaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author moyel
+ */
 @Service
 public abstract class BaseServiceImpl<M extends BaseMapper<E>, E> implements IService<E> {
     private M baseMapper;
